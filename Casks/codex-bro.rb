@@ -2,49 +2,49 @@
 cask "codex-bro" do
   name "codex-bro"
   desc "WeChat bridge for talking to Codex and receiving notifications"
-  homepage "https://github.com/etng/codex_bro"
-  version "0.2.0"
+  homepage "https://github.com/etng/codex-bro"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "codex_bro"
+  binary "codex-bro"
 
   on_macos do
     on_intel do
-      url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/etng/codex_bro/"
-      sha256 "62ee7345f74202671906fa7ea407fe1d0ba999939cd9c9fc6f6e72f8c8b4d62f"
+      url "https://github.com/etng/codex-bro/releases/download/v#{version}/codex-bro_#{version}_darwin_amd64.tar.gz",
+        verified: "github.com/etng/codex-bro/"
+      sha256 "e9e2ce774699f4c01cf7cc259f28beb63870269846df53b1bd253a178f2f8d20"
     end
     on_arm do
-      url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/etng/codex_bro/"
-      sha256 "40043fef33ac31e7cb36f4451e10cf7bac0990baef92dc490187f4a4c8bff52c"
+      url "https://github.com/etng/codex-bro/releases/download/v#{version}/codex-bro_#{version}_darwin_arm64.tar.gz",
+        verified: "github.com/etng/codex-bro/"
+      sha256 "304ed0bfdb75e67a78a727e871e1e098dbccbeea4e287a31c3a64b1d0f6ecd71"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/etng/codex_bro/"
-      sha256 "e24ce840b8c140521f633f9273b1c8e2542e3012e3021142874184026f566de0"
+      url "https://github.com/etng/codex-bro/releases/download/v#{version}/codex-bro_#{version}_linux_amd64.tar.gz",
+        verified: "github.com/etng/codex-bro/"
+      sha256 "c2c52f966b86d88257b7a6e7f51b46e64192bb0ca506311d34760b6ead4a7178"
     end
     on_arm do
-      url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/etng/codex_bro/"
-      sha256 "a2d7ef073181f43bf3d9a9ad9693e08e7329f013287e28fdb0e63fc586a6687c"
+      url "https://github.com/etng/codex-bro/releases/download/v#{version}/codex-bro_#{version}_linux_arm64.tar.gz",
+        verified: "github.com/etng/codex-bro/"
+      sha256 "4ecddc4df91b585266eda3572f2067176039f5f790b96c04c201e2bde35af656"
     end
   end
 
   postflight do
     if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/codex_bro"]
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/codex-bro"]
     end
   end
 
   caveats do
-    "The installed command is `codex_bro`."
+    "The installed command is `codex-bro`."
   end
 
   # No zap stanza required
