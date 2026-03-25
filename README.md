@@ -6,10 +6,10 @@ Homebrew tap for etng tools.
 
 ```bash
 brew tap etng/tap
-brew install codex-bro
+brew install --cask codex-bro
 ```
 
 ## Notes
 
-- Formula files live in `Formula/`.
+- Cask files live in `Casks/`.
 - Release automation such as GoReleaser can update this repository directly.
