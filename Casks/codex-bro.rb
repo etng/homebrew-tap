@@ -3,7 +3,7 @@ cask "codex-bro" do
   name "codex-bro"
   desc "WeChat bridge for talking to Codex and receiving notifications"
   homepage "https://github.com/etng/codex_bro"
-  version "0.1.3"
+  version "0.1.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "codex-bro" do
     on_intel do
       url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/etng/codex_bro/"
-      sha256 "3868e5a67e64555e07cf7d2e90b58adbac5d891106341f1887600033d7089307"
+      sha256 "2bfc6abaf2e465bd4a26f4da599be2c5c317baaed3a6684ba5f313cba18817c8"
     end
     on_arm do
       url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/etng/codex_bro/"
-      sha256 "f339156fd631f36c85e7880f8fa261709b7ffed8dbac240eeb776c17142a2c31"
+      sha256 "8362b48e7b495622e8b278532b3fe0764a3bd660c14f610a67fa32fcb89732ec"
     end
   end
 
@@ -28,12 +28,12 @@ cask "codex-bro" do
     on_intel do
       url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_linux_amd64.tar.gz",
         verified: "github.com/etng/codex_bro/"
-      sha256 "a5ad1ad86240f74cc35ad6d1ad1e9409deed1d2cb669483f7ed6093054f92732"
+      sha256 "e79670259f557d313f67cd3a66c90504b5b781a0c347207cbdadd5cba191f39e"
     end
     on_arm do
       url "https://github.com/etng/codex_bro/releases/download/v#{version}/codex_bro_#{version}_linux_arm64.tar.gz",
         verified: "github.com/etng/codex_bro/"
-      sha256 "d7f66662e823c17a2c32ecc887937fea98ead89076bcdfab4895e0811dade0c5"
+      sha256 "6e8b1cdccc294b32d6ac6da37ac0db45fbfdfdb8b182fbc63aec69bc5833f21e"
     end
   end
 
