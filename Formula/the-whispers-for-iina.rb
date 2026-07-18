@@ -5,9 +5,9 @@
 class TheWhispersForIina < Formula
   desc "Local progressive bilingual subtitles for IINA"
   homepage "https://github.com/etng/the-whispers-for-iina"
-  url "https://github.com/etng/the-whispers-for-iina/releases/download/v0.3.0/the-whispers-for-iina-0.3.0-macos-arm64.tar.gz"
-  version "0.3.0"
-  sha256 "f9fd9039efc510d6d0ff4f0c2f293fa24b43e9b7e5c08a64c02b5b8a1c9e279b"
+  url "https://github.com/etng/the-whispers-for-iina/releases/download/v0.3.1/the-whispers-for-iina-0.3.1-macos-arm64.tar.gz"
+  version "0.3.1"
+  sha256 "7006aa2532eb7f893220ef15d973a19588db2f8ac8157a0d84f69d9c86f2b71a"
   license "MIT"
 
   depends_on arch: :arm64
